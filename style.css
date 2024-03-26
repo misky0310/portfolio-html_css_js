@@ -16,6 +16,10 @@
     --main-color:#00ffee;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 html{
     overflow-x: hidden;
     /* font-size: 3rem; */
@@ -236,7 +240,8 @@ section{
 .heading{
     font-size: 8rem;
     text-align: center;
-    margin: 5rem 0;
+    margin: 3rem 0;
+    color: #fff;
 }
 
 .education{
@@ -330,4 +335,102 @@ section{
     line-height: 22px;
 }
 
- 
+.skills{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+.skills h2,.projects h2{
+    margin-bottom: 5rem;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skill-box{
+    background-color: var(--main-color);
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding-block: 2rem;
+}
+
+.skill-box:hover{
+    background: #fff;
+    color: #000;
+    border: 5px solid var(--main-color);
+    transform: scale(1.05);
+}
+
+.skill-info,.project-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: baseline;
+    padding: 2rem 4rem;
+    gap: 1rem;
+}
+.skill-info h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.skill-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: auto;
+}
+
+.projects{
+    background-color: var(--bg-color-secondary);
+    color: black;
+}
+
+.projects-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-box{
+    background-color: var(--bg-color);
+    color:#fff;
+    border-radius: 3rem;
+    border: 5px solid var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: auto;
+    height: 100%;
+}
+
+.project-info h4{
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    
+}
+
+.project-info a{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.project-box:hover{
+    transform: scale(1.05);
+    background-color: #353535;
+}
